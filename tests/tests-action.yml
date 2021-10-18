@@ -1,0 +1,17 @@
+name: "Tests"
+description: "Running tests"
+author: "test@github.com"
+
+inputs:
+  tag:
+    description: "Who to greet"
+    required: true
+    default: "tag1"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "purple"
